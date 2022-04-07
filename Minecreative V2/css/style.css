@@ -1,0 +1,255 @@
+*{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    --light: #2a2a2a;
+    --primary: #dddddd;
+    --dark: #545454;
+    --title: #E6B31E;
+    --button: #3C30C4;
+}
+
+body.dark-theme {
+    --primary: #2a2a2a;
+    --light: #dddddd;
+    --dark: #545454;
+    --title: #E6B31E;
+    --button: #3C30C4;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /* defaults to dark theme */
+    body {
+        --primary: #2a2a2a;
+        --light: #dddddd;
+        --dark: #545454;
+        --title: #E6B31E;
+        --button: #3C30C4;
+    }
+
+    body.light-theme {
+        --light: #2a2a2a;
+        --primary: #dddddd;
+        --dark: #545454;
+        --title: #E6B31E;
+        --button: #3C30C4;
+    }
+}
+
+body {
+    background-color: var(--primary);
+    font-family: Montserrat;
+    color: var(--light);
+    margin: 26px 190px;
+}
+
+/*Navbar*/
+nav {
+    background-color: var(--primary);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 21px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--light);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--light);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+nav a.link {
+    color: var(--light);
+    text-decoration: none;
+    padding: 0 17.5px;
+    font-size: 1em;
+    font-weight: 505;
+    float: right;
+}
+
+nav a.link:hover {
+    color: var(--title);
+}
+
+nav a.link:active {
+    color: var(--title);
+}
+
+.title {
+    color: var(--title);
+}
+
+nav a img {
+    height: 3vh;
+
+}
+
+
+/*Layer1*/
+.open-text {
+    color: var(--light);
+    margin-right: 30%;
+    font-size: 0.62em;
+}
+
+.open-text p {
+    line-height: 1.8;
+    font-weight: 500;
+    font-size: 200%;
+}
+
+h1 {
+    font-size: 3.5vw;
+}
+
+.contact {
+    background: var(--button);
+    box-shadow: 6px 5px 28px 2px rgba(0, 0, 0, 0.13);
+    border-radius: 15px;
+    padding: 10px 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5vw;
+    line-height: 143.1%;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    transition: 300ms;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+}
+
+/*Layer2*/
+
+div.layer2 h1{
+    font-size: 2vw;
+}
+
+div.layer2 p {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--light);
+    font-weight: normal;
+}
+
+div.avatar img {
+    border-radius: 50%;
+    height: 30vh;
+}
+
+.bio {
+    display: flex;
+}
+
+.avatar {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.avatar:nth-child(odd) {
+    margin-top: 109px;
+}
+
+/*Layer3*/
+div.layer3 {
+    margin: 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 33.33%;
+    transition: 500ms;
+}
+
+.column img:hover {
+    transform: translateY(-15px);
+    transition: 500ms;
+}
+
+/*Footer*/
+div.layer4 h1 {
+    color: var(--title);
+    font-size: 2em;
+}
+.contactlink{
+    background-color: var(--primary);
+    color: var(--light);
+    border-width: 10px;
+    width: 25vw;
+    height: 5vh;
+    border-color: var(--light);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 17.5px;
+    font-size: 1em;
+    font-weight: 500;
+    display: block;
+    border-radius: 15px;
+    transition: 300ms;
+    margin :4vh;
+    border: 1px solid var(--light);
+    }
