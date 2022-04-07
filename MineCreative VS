@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="img/Mine Logo Type 2.png">
+        </div>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+
+
+    <!-- Header -->
+    <header>
+        <div class="header">
+            <div class="judul">
+                <h1>Hello</h1>
+                <h1>We're <b>MineCreative</b></h1>
+                <p>This is MineCreative team of visual designer, Photographer, Web Developer and Editor located in
+                    Indonesia, Medan looking for working around the world.</p>
+            </div>
+            <button class="tombol">Contact Us</button>
+        </div>
+    </header>
+    <!-- Akhir Header -->
+
+
+    <!-- About Us -->
+
+    <div class="about">
+        <h2>About Us</h2>
+        <div class="recognize">
+            <div class="profile1">
+                <img src="img/Profile Pict.png">
+                <div class="description">
+                    <h3>Salman Rizwana</h3>
+                    <p>Visual Designer</p>
+                    <p>UI/UX Designer</p>
+                    <p>Photographer</p>
+                    <p>Photo & Video Editor</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile2">
+            <!-- <img src="img/Profile Pict.png"> -->
+        </div>
+    </div>
+
+
+    </container>
+
+
+    <!-- Akhir About Us -->
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
