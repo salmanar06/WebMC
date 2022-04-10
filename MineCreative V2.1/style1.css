@@ -1,6 +1,15 @@
+:root{
+    --primary: #343434;
+    --text: #fcfaf1;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,7 +25,7 @@ nav .logo img {
 
 nav {
     display: flex;
-    background-color: #343434;
+    background-color: var(--primary);
     justify-content: space-around;
     height: 70px;
     align-items: center;
@@ -33,7 +42,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: 500;
     font-size: 1em;
-    color: #fcfaf1;
+    color: var(--text);
 }
 
 nav ul li a:hover {
@@ -64,7 +73,7 @@ nav ul li a:hover {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #fcfaf1;
+    background-color: var(--text);
     border-radius: 3px;
     transition: 300ms;
 }
@@ -79,12 +88,12 @@ nav ul li a:hover {
 }
 
 .menu-toggle input:checked~span:nth-child(2) {
-    background-color: #fcfaf1;
+    background-color: var(--text);
     transform: rotate(45deg) translate(-1px, -1px);
 }
 
 .menu-toggle input:checked~span:nth-child(4) {
-    background-color: #fcfaf1;
+    background-color: var(--text);
     transform: rotate(-45deg) translate(-1px, 0);
 }
 
@@ -114,7 +123,7 @@ header {
 
 .judul h1 {
     font-weight: 800;
-    color: #fcfaf1;
+    color: var(--text);
     font-size: 2.5em;
     line-height: 61px;
 }
@@ -129,8 +138,9 @@ header {
 }
 
 .judul p {
+    text-align: justify;
     font-weight: 500;
-    color: #fcfaf1;
+    color: var(--text);
     font-size: 1.3em;
     line-height: 30px;
     padding-bottom: 60px;
@@ -140,13 +150,16 @@ header {
     width: 213px;
     height: 62.65px;
     padding: 10px;
-    font-size: 20px;
-    color: white;
     border: 0 solid;
     border-radius: 10px;
     background-color: #4A5CFF;
     transform: translateY(5px);
     transition: 500ms;
+}
+.tombol a{
+    color:var(--text);
+    text-decoration:none;
+    font-size:20px;
 }
 
 .tombol:hover {
@@ -163,7 +176,7 @@ header {
 
 /* About Us */
 .container {
-    background-color: #343434;
+    background-color: var(--primary);
     background-image: url(img/img2/Jumbotron\ Black.svg);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -184,7 +197,7 @@ header {
     text-align: center;
     margin-bottom: 70px;
     padding-top: 71px;
-    color: #fcfaf1;
+    color: var(--text);
 }
 
 .profile {
@@ -203,13 +216,13 @@ header {
     font-size: 1.5em;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #fcfaf1;
+    color: var(--text);
 }
 
 .profile p {
     font-weight: 600;
     line-height: 30px;
-    color: #fcfaf1;
+    color: var(--text);
 }
 
 .location {
@@ -221,7 +234,7 @@ header {
     padding: 15px;
     font-size: 20;
     font-weight: 600;
-    color: #fcfaf1;
+    color: var(--text);
 }
 
 /* Akhir About Us */
@@ -231,7 +244,7 @@ header {
 /* Our Projects */
 
 .projects {
-    background-color: #343434;
+    background-color: var(--primary);
     background-image: url(img/img2/Rectangle\ Black.svg), url(img/img2/Jumbotron\ Black.svg);
     background-position: top, bottom;
     background-size: 100%;
@@ -252,7 +265,7 @@ header {
     font-size: 35px;
     font-weight: 600;
     padding-bottom: 150px;
-    color: #fcfaf1;
+    color: var(--text);
 }
 
 .project .img img {
@@ -278,7 +291,7 @@ header {
     padding-top: 20px;
     padding-bottom: 15px;
     cursor: pointer;
-    color: #fcfaf1;
+    color: var(--text);
 }
 
 .project h4 {
@@ -286,11 +299,11 @@ header {
     font-weight: 600;
     padding-top: 15px;
     cursor: pointer;
-    color: #fcfaf1;
+    color: var(--text);
 }
 
 .project h5 {
-    color: #fcfaf1;
+    color: var(--text);
     font-size: 22px;
     font-weight: 600;
     padding-top: 25px;
